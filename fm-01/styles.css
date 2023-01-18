@@ -99,7 +99,7 @@ body {
     margin-right: .5em;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
     .card__container {
         margin: 1em 0;
         width: 95%;
