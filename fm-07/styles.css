@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --Font-size-name-and-stats: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 51vw bottom 20vh, left 40vw top 50vh;
+    font-size: var(--Font-size-name-and-stats);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.content__card {
+    overflow: hidden;
+    width: 330px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: .8em;
+    position: relative;
+}
+
+.card__background {
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    border-radius: .8em .8em 0 0;
+}
+
+.card__photo {
+    position: absolute;
+    top: 80px;
+    left: 35%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card__photo img {
+    display: block;
+    height: 100%;
+}
+
+.card__personal-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    padding: 4em 2em 2.5em;
+}
+
+.card__stats {
+    border-top: 1px solid var(--Dark-gray);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em 1.5em;
+}
+
+.data__name-age {
+    display: flex;
+    gap: 1em;
+}
+
+.data__city {
+    color: var(--Dark-grayish-blue);
+}
+
+.data__name {
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.data__age {
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-top: 1.5em;
+}
+
+.quantity {
+    text-transform: uppercase;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.unix {
+    font-size: .8em;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        background-position: right 60vw bottom 20vh, left 50vw top 50vh;
+    }
+
+    .content__card {
+        overflow: hidden;
+        width: 350px;
+        margin: 0 auto;
+    }
+}
