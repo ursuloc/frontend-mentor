@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 0.9375rem;
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--White);
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left -10vw top 0vh, left 20vw top 10vh;
+}
+
+
+.social__content {
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.social__proof {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+
+.text__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__text {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.social__score {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social__comments {
+    display: inline-flex;
+    gap: 1em;
+}
+
+.comments__card:nth-child(2) {
+    margin-top: 1em;
+}
+
+.comments__card:nth-child(3) {
+    margin-top: 2em;
+}
+
+
+
+.social__text .text__h2 {
+    color: var(--Very_Dark_Magenta);
+    font-size: 3rem;
+}
+
+.social__text .text__p {
+    color: var(--Very_Dark_Magenta);
+    line-height: 1.5;
+}
+
+
+
+.score__card {
+    width: 24.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 1em;
+    border-radius: .8em;
+    background-color: var(--Light_Grayish_Magenta);
+    color: var(--Very_Dark_Magenta);
+    font-weight: 700;
+}
+
+.card__icon--start {
+    display: flex;
+    gap: .4em;
+}
+
+.score__card:nth-child(2) {
+    margin-left: 1em;
+}
+
+.score__card:nth-child(3) {
+    margin-left: 2em;
+}
+
+.comments__card {
+    width: 300px;
+    height: 200px;
+    background-color: var(--Very_Dark_Magenta);
+    padding: 1em 1.5em;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: .5em;
+}
+
+.comments__data {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.data__img img {
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+}
+
+.data__user {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    font-weight: 500;
+}
+
+.user__name {
+    color: var(--White);
+}
+
+.user__verified {
+    color: var(--Soft_Pink);
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: left 0vw top 0vh, right 0vw bottom 0vh;
+    }
+
+    .social__proof {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        overflow-x: hidden;
+    }
+
+    .social__comments {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .text__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .social__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .social__text .text__h2 {
+        color: var(--Very_Dark_Magenta);
+        font-size: 2.4rem;
+    }
+
+    .score__card {
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+        border-radius: .8em;
+        background-color: var(--Light_Grayish_Magenta);
+        color: var(--Very_Dark_Magenta);
+        font-weight: 700;
+    }
+
+
+    .score__card:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .score__card:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .comments__card:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .comments__card:nth-child(3) {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    .social__content {
+        align-items: stretch;
+    }
+}
