@@ -22,9 +22,17 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Rubik', sans-serif;
     background-color: var(--Light_Grayish_Violet);
+    background-image: url(images/blob.svg);
+    background-repeat: no-repeat;
+    background-position: left -40vw top -20vh;
     min-height: 100vh;
+
 }
 
 .content {
@@ -98,6 +106,7 @@ body {
 
 .user__status {
     color: var(--Grayish_Blue);
+    opacity: 0.5;
 }
 
 .ph-header__info {
@@ -226,7 +235,30 @@ body {
     color: var(--Dark_Grayish_Violet);
 }
 
+
+.ph__messages {
+    animation: ph__messages 2s linear forwards;
+}
+
+@keyframes ph__messages {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
 @media screen and (min-width: 1000px) {
+    body {
+        background-image: url(images/blob.svg);
+        background-repeat: no-repeat;
+        background-position: left -40vw top -30vh;
+    }
+
     .content {
         width: 90%;
         margin: 0 auto;
