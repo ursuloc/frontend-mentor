@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+// Variables
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$Very_Dark_Blue: hsl(234, 12%, 34%);
+$Grayish_Blue: hsl(229, 6%, 66%);
+$Very_Light_Gray: hsl(0, 0%, 98%);
+$font-h2-primario: 100;
+$font-h2-secunario: 600;
+$font-h3: 600;
+$font-p: 200;
+
+// Global
+
+html {
+  font-size: 0.938rem;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  background-color: $Very_Light_Gray;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+}
+
+h2 {
+  color: $Very_Dark_Blue;
+}
+
+.feature__text {
+  h2 {
+    text-align: center;
+  }
+  h2:nth-child(1) {
+    font-weight: $font-h2-primario;
+    font-weight: 100;
+  }
+  h2:nth-child(2) {
+    font-weight: 600;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+h3 {
+  font-weight: $font-h3;
+  color: $Very_Dark_Blue;
+}
+
+p {
+  font-size: $font-p;
+  color: $Grayish_Blue;
+}
+
+.feature_card {
+  width: 22em;
+  padding: 1em 2em;
+  border-top: 4px solid $Cyan;
+  border-radius: 0.25em;
+  box-shadow: 1px 1px 7px -1px rgba(0, 0, 0, 0.75);
+  position: relative;
+  .card__image {
+    align-self: flex-end;
+    img {
+      width: 60px;
+    }
+  }
+}
+
+.feature_card:nth-child(2) {
+  @extend .feature_card;
+  border-top: 4px solid $Red;
+}
+
+.feature_card:nth-child(3) {
+  @extend .feature_card;
+  border-top: 4px solid $Orange;
+}
+
+.feature_card:nth-child(4) {
+  @extend .feature_card;
+  border-top: 4px solid $Blue;
+}
+
+//MIXINS
+@mixin box-flex($direccion, $principal, $cruzado, $espacio) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $principal;
+  align-items: $cruzado;
+  gap: $espacio;
+}

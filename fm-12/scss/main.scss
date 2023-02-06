@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.feature {
+  @include box-flex(column, center, center, 4em);
+  width: 95%;
+  margin: 0 auto;
+}
+
+.feature__cards {
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 0 auto;
+}
+
+.feature_card {
+  @include box-flex(column, center, start, 1em);
+}
+
+.feature_card:nth-child(1),
+.feature_card:nth-child(3) {
+  transform: translateY(50%);
+}
+
+@import "breakpoints";

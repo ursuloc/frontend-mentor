@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+html {
+  font-size: 0.938rem;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+}
+
+h2 {
+  color: hsl(234deg, 12%, 34%);
+}
+
+.feature__text h2 {
+  text-align: center;
+}
+.feature__text h2:nth-child(1) {
+  font-weight: 100;
+  font-weight: 100;
+}
+.feature__text h2:nth-child(2) {
+  font-weight: 600;
+}
+.feature__text p {
+  text-align: center;
+}
+
+h3 {
+  font-weight: 600;
+  color: hsl(234deg, 12%, 34%);
+}
+
+p {
+  font-size: 200;
+  color: hsl(229deg, 6%, 66%);
+}
+
+.feature_card, .feature_card:nth-child(4), .feature_card:nth-child(3), .feature_card:nth-child(2) {
+  width: 22em;
+  padding: 1em 2em;
+  border-top: 4px solid hsl(180deg, 62%, 55%);
+  border-radius: 0.25em;
+  box-shadow: 1px 1px 7px -1px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+.feature_card .card__image {
+  align-self: flex-end;
+}
+.feature_card .card__image img {
+  width: 60px;
+}
+
+.feature_card:nth-child(2) {
+  border-top: 4px solid hsl(0deg, 78%, 62%);
+}
+
+.feature_card:nth-child(3) {
+  border-top: 4px solid hsl(34deg, 97%, 64%);
+}
+
+.feature_card:nth-child(4) {
+  border-top: 4px solid hsl(212deg, 86%, 64%);
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.feature__cards {
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 0 auto;
+}
+
+.feature_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1em;
+}
+
+.feature_card:nth-child(1),
+.feature_card:nth-child(3) {
+  transform: translateY(50%);
+}
+
+@media (max-width: 1100px) {
+  .feature__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 0 auto;
+  }
+  .feature_card:nth-child(1),
+  .feature_card:nth-child(3) {
+    transform: translateY(0%);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
