@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+// Variables
+
+$Cyan: hsl(179, 62%, 43%);
+$Bright_Yellow: hsl(71, 73%, 54%);
+$Light_Gray: hsl(204, 43%, 93%);
+$Grayish_Blue: hsl(218, 22%, 67%);
+$font_p: 400;
+$font_title: 700;
+
+// Global
+
+html {
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Karla", sans-serif;
+}
