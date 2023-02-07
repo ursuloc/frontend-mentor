@@ -1,0 +1,130 @@
+@use "global" as *;
+
+.intro__center {
+  width: 90%;
+  margin: 0 auto;
+  @include box-flex(column, center, center, 0.5em);
+  text-align: center;
+  max-width: 550px;
+}
+
+.intro__logo {
+  margin: 1em auto;
+  img {
+    width: 90px;
+  }
+}
+
+.intro__text {
+  @include box-flex(column, center, center, 0.5em);
+}
+
+.buttons {
+  margin-top: 2em;
+  @include box-flex(row, center, center, 1em);
+}
+
+.track__center {
+  @include box-flex(column, center, space-between, 6em);
+  margin-top: 6em;
+}
+
+.track__text {
+  @include box-flex(column, center, center, 0.8em);
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 640px;
+}
+
+.track__functions {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.functions__figure {
+  //   flex: 1;
+  img {
+    width: 50vw;
+    transform: translateX(-40px);
+  }
+}
+
+.functions__list {
+  margin-bottom: 5em;
+  width: 95%;
+  max-width: 300px;
+  ul {
+    @include box-flex(column, center, flex-start, 2em);
+    li {
+      @include box-flex(column, center, flex-start, 0.5em);
+      line-height: 1.6;
+    }
+  }
+}
+
+.access {
+  margin-top: 6em;
+}
+
+.access__center {
+  @include box-flex(column, center, center, 4em);
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.access__text {
+  @include box-flex(column, center, center, 0.4em);
+  max-width: 600px;
+}
+
+.access__figure {
+  img {
+    max-width: 600px;
+  }
+}
+
+.workflow {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.workflow__center {
+  @include box-flex(column, center, center, 0.8em);
+}
+
+.workflow__text {
+  @include box-flex(column, center, center, 0.8em);
+}
+
+.workflow__cw {
+  @include box-flex(row, center, center, 2em);
+  margin-top: 3em;
+}
+
+.card__cw {
+  @include box-flex(column, center, center, 0.5em);
+  max-width: 350px;
+  height: 167px;
+  text-align: center;
+  img {
+    width: 40px;
+  }
+  h5 {
+    font-size: 1.4rem;
+  }
+}
+
+.companies {
+  width: 90%;
+  margin: 7em auto 0;
+}
+
+.companies__center {
+  @include box-flex(row, space-evenly, center, 3em);
+  img {
+    width: 150px;
+  }
+}

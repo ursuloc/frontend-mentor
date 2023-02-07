@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;1,600&display=swap");
+
+// Variables
+
+$Strong_Cyan: #26baa4;
+$Light_Blue: #6173ff;
+$Dark_Grayish_Blue: #4c545d;
+$Grayish_Blue: #9fabb2;
+$font_paragraph: 400;
+$font_title: 600;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.125;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Bai Jamjuree", sans-serif;
+  width: 100%;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $Dark_Grayish_Blue;
+  font-weight: $font_title;
+}
+
+p {
+  color: $Grayish_Blue;
+}
+
+a {
+  text-decoration: none;
+  color: $Dark_Grayish_Blue;
+  font-weight: $font_paragraph;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: $Strong_Cyan;
+  padding: 0.9em 2.1em;
+  border-radius: 1.5em;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-weight: $font_paragraph;
+}
+
+.buttons button:nth-child(2) {
+  @extend button;
+  background-color: $Light_Blue;
+}
+
+.workflow__text h4 {
+  color: $Grayish_Blue;
+  font-weight: $font_paragraph;
+}
+
+.footer {
+  background-color: #9fabb231;
+}
+
+//MIXINS
+@mixin box-flex($direccion, $principal, $cruzado, $espacio) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $principal;
+  align-items: $cruzado;
+  gap: $espacio;
+}
