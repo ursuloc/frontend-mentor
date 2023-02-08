@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.intro {
+  margin-top: 8em;
+}
+
 .intro__center {
   width: 90%;
   margin: 0 auto;
@@ -167,3 +171,5 @@
   @include box-flex(row, space-around, center, 2em);
   flex-wrap: wrap;
 }
+
+@import "breakpoints";
