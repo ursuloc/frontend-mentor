@@ -128,3 +128,42 @@
     width: 150px;
   }
 }
+
+.download {
+  width: 90%;
+  margin: 3em auto 0;
+}
+
+.download__center {
+  @include box-flex(column, center, center, 1em);
+  text-align: center;
+}
+
+.download__text {
+  @include box-flex(column, center, center, 0.5em);
+  max-width: 600px;
+}
+
+.footer {
+  margin-top: 5em;
+}
+
+.footer__center {
+  width: 90%;
+  margin: 0 auto;
+  @include box-flex(row, space-around, center, 0.5em);
+  padding: 1em 0;
+}
+
+.footer__logo img {
+  width: 60px;
+}
+
+.footer__social {
+  @include box-flex(row, space-around, center, 2em);
+}
+
+.footer__cta {
+  @include box-flex(row, space-around, center, 2em);
+  flex-wrap: wrap;
+}

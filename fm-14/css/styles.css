@@ -255,4 +255,63 @@ button, .buttons button:nth-child(2) {
   width: 150px;
 }
 
+.download {
+  width: 90%;
+  margin: 3em auto 0;
+}
+
+.download__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+
+.download__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  max-width: 600px;
+}
+
+.footer {
+  margin-top: 5em;
+}
+
+.footer__center {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em 0;
+}
+
+.footer__logo img {
+  width: 60px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+}
+
+.footer__cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
 /*# sourceMappingURL=styles.css.map */
