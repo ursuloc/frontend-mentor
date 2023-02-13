@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft_Magenta: hsl(300, 69%, 71%);
+    --font-Open-Sans: 'Open Sans', sans-serif;
+    --font-Poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.main__nav {
+    align-self: start;
+    margin: 1em 0;
+}
+
+.main__figure {
+    margin: 2em 0;
+}
+
+.nav__figure img {
+    width: 150px;
+}
+
+.main__figure img {
+    width: 100%;
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: center;
+    font-family: var(--font-Poppins);
+}
+
+
+.button button {
+    border: none;
+    background-color: #fff;
+    padding: 1em 6em;
+    border-radius: 10em;
+    color: var(--Violet);
+    font-size: 15px;
+}
+
+.button button:hover {
+    cursor: pointer;
+    background-color: var(--Soft_Magenta);
+    color: #fff;
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 3em 0;
+}
+
+
+.social__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.social__icon:hover {
+    background-color: var(--Soft_Magenta);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-position: left -30vw bottom 0vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .main__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .main__content .main__figure {
+        flex: 1;
+    }
+
+    .main__content .main__text {
+        flex: 1;
+    }
+
+    .button button {
+        padding: 1em 4em;
+    }
+
+    .main__text {
+        text-align: start;
+    }
+
+    .text__title {
+        font-size: 2rem;
+    }
+
+    .social {
+        align-self: self-end;
+    }
+}
