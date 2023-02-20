@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --Pink: #ff52bf;
+    --Light-Pink: #ff8fd8;
+    --Light-Red: #ff4242;
+    --Very-Dark-Cyan: #00252e;
+    --Very-Pale-Blue: #f5faff;
+}
